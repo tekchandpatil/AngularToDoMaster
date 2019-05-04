@@ -1,0 +1,11 @@
+<h2>Done</h2>
+    <mat-list>
+      <ng-container *ngFor="let task of taskSuccessful; let i = index">
+        <mat-list-item>
+          {{i+1}}
+          {{task }}
+
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </ng-container>
+    </mat-list>

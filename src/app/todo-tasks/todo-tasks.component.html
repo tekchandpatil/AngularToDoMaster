@@ -1,0 +1,12 @@
+<h2>ToDo</h2>
+<mat-list>
+  <ng-container *ngFor="let task of taskList; let i = index">
+    <mat-list-item>
+      <mat-icon matTooltip="Remove task" matTooltipClass="tooltip-red" (click)="removeTask(task)">delete</mat-icon>
+      {{i+1}}
+      {{task }}
+      &nbsp;&nbsp;<button class="btn btn-primary" (click)="doneTask(task)">done</button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </ng-container>
+</mat-list>
